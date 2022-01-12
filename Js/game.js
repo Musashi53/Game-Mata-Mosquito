@@ -5,8 +5,6 @@ var tempo = 15;
 
 var criaMosquitoTempo = 1500;
 
-
-
 function ajustaTamanhoPalcoJogo() {
     altura = window.innerHeight;
     largura = window.innerWidth;
@@ -36,12 +34,10 @@ function posicaoRandomica() {
     if(document.getElementById('mosquito')) {
         document.getElementById('mosquito').remove();
 
-        //console.log('v ' + vidas)
         if(vidas > 3) {
             window.location.href = 'fim_de_jogo.html';
         } else {
-            document.getElementById('v' + vidas).src = "/App2-Game_Mata_Mosquito/Img/coracao_vazio.png";
-
+            document.getElementById('v' + vidas).src = "/Img/coracao_vazio.png";
             vidas++;
         };
     };
@@ -57,7 +53,7 @@ function posicaoRandomica() {
 
     //Criar o elemento HTML
     var mosquito = document.createElement('img');
-    mosquito.src = 'Img/mosca.png';
+    mosquito.src = '/Img/mosca.png';
     mosquito.className = tamanhoAleatorio() + ' ' + ladoAleatorio();
     mosquito.style.left = posicaoX + 'px';
     mosquito.style.top = posicaoY + 'px';

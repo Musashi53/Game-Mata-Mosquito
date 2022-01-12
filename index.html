@@ -12,29 +12,15 @@
         <!--Bootstrap 4-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-        <!--Script Game-->
-        <script>
-            function iniciarJogo() {
-                var nivel = document.getElementById('nivel').value
-
-                if (nivel === '') {
-                    alert('Selecione um nível para iniciar o jogo')
-                    return false
-                }
-
-                window.location.href = "App.html"
-                
-            }
-        </script>
+        
     </head>
 
     <body>
-        
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="d-flex justify-content-center">
-                        <img src="/App2-Game_Mata_Mosquito/Img/game.png" alt="">
+                        <img src="/Img/game.png" alt="mata_mosquito">
                     </div>
                 </div>
             </div>
@@ -50,7 +36,6 @@
                                 <option value="chucknorris">Chuck Norris</option>
                             </select>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -63,5 +48,20 @@
                 </div>
             </div>
         </div>
+
+        <!--Script Game-->
+        <script>
+            function iniciarJogo() {
+                var nivel = document.getElementById('nivel').value
+
+                if (nivel === '') {
+                    alert('Selecione um nível para iniciar o jogo')
+                    return false
+                }
+
+                window.location.href = "App.html"
+                
+            }
+        </script>
     </body>
 </html>

@@ -1,9 +1,9 @@
 html {
-    cursor: url(App2-Game_Mata_Mosquito/Img/mata_mosca.png) 30 30, auto;
+    cursor: url(/Img/mata_mosca.png) 30 30, auto;
 }
 
 body {
-    background-image: url(/App2-Game_Mata_Mosquito/Img/bg.jpg);
+    background-image: url(/Img/bg.jpg);
     background-repeat: no-repeat;
 }
 
@@ -45,8 +45,6 @@ body {
 
 .vidas {
     float: left;
-
-
 }
 
 .cronometro {
